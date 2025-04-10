@@ -24,7 +24,7 @@ class statistical
     // thêm user vào DB
     public function gettongKhachHang()
     {
-        $query = "SELECT * FROM tbl_uer";
+        $query = "SELECT * FROM tbl_user";
         $result = $this->db->select($query);
         return $result;
     }

@@ -57,7 +57,7 @@
          public function admin_getOrder($status){
             $query = "SELECT DISTINCT username,name, od.userId
             FROM tbl_order AS od
-            INNER JOIN tbl_suer AS us ON od.userId =us.userId
+            INNER JOIN tbl_user AS us ON od.userId =us.userId
             WHERE od.status IN $status";
             $result = $this->db->select($query);
             return $result;
